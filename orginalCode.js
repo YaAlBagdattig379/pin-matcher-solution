@@ -1,4 +1,4 @@
-// this is example of js file of pin mathcher '''wow you should follow it
+//  pin mathcher '''wow you should follow it
 function getPin(){
    const pin = Math.round(Math.random() * 10000);
    const pinString = pin + "";
@@ -9,11 +9,13 @@ function getPin(){
       return getPin();
    }
 }
+//click for generate pin
 function generatePin(){
    const pinNumber = getPin()
    // //this is a stumbled input to show four digit numbers.
    document.getElementById('display-pin').value = pinNumber;
 }
+//event bubble are to set in here to press all of decreasing elements one by one
  document.getElementById('key-pad').addEventListener('click',function(event){   
       const number = event.target.innerText;
       const calcInput = document.getElementById('typed-numbers');
@@ -27,6 +29,7 @@ function generatePin(){
          calcInput.value = newNumber;
       }
  })
+ // submit for matching pin
  function verifyPin(){
    const pin =  document.getElementById('display-pin').value;
    const typedNumbers =  document.getElementById('typed-numbers').value;
@@ -39,8 +42,5 @@ function generatePin(){
    else{
       successMsg.style.display = 'none';
       failMsg.style.display = 'block';
-   //  console.log('hello kaj korche na to ~!');
-
    }
-   // console.log(pin,'hello kaj korche to ~!');
  }
