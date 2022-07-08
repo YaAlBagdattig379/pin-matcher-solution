@@ -1,3 +1,4 @@
+/*
 function getPin(){
     const pin = Math.round(Math.random()*10000);
     const pinString = pin + '';
@@ -67,3 +68,4 @@ function notifyPin() {
         successMsg.style.display = 'none';
         failedMsg.style.display = 'block';
     }*/
+    /** */
