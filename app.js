@@ -22,7 +22,6 @@ document.getElementById('key-pad').addEventListener('click',function(event){
         calcInput.value = ' ';
     }
     else{
-      
         const previousNumber = calcInput.value;
         const newNumber = previousNumber + number;
         calcInput.value = newNumber;
